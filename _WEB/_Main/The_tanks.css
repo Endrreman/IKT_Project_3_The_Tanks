@@ -1,0 +1,30 @@
+body{
+    box-sizing: border-box;
+    word-break: break-word;
+    margin: 0;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    position:fixed;
+    /* elhelyezkedés
+    right: ;
+    top: ;
+    */
+}
+#header_ul{
+    display: flex;
+    list-style: none;
+}
+.header_icon{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 50px;
+    padding-left: 50px;
+}
+.abaut_us_icon{
+    background-image: url(IMG/Abaut_Us_icon.png);
+}
