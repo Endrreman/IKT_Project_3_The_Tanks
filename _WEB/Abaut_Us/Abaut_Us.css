@@ -6,36 +6,38 @@ body{
     height: 100%;
     margin: 0;
     font-family: Bahnschrift;
+    text-align: justify;
+    background-image: url(../IMG/fű.png);
+    background-size: 6%;
+    color: #043616;
 }
 a{
     cursor: pointer;
 }
+hr{
+    background-image: url(../IMG/fal.png);
+    display: block;
+    height: 16px;
+    width: 90%;
+    border: 0;
+    border-radius: 5px;
+}
 
 /*     Scrollbar     */
 ::-webkit-scrollbar {
-    width: 18px;
-}
-::-webkit-scrollbar:hover {
-    width: 18px;
-}
-::-webkit-scrollbar-track:hover {
-    background-color: rgb(255, 255, 255);
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    border: 3px solid rgb(255, 255, 255);
-    border-left: none;
+    display: none;
 }
 
 /*!       Header       */
 header{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
     align-items: center;
     display: flex;
     position:fixed;
-    right: 0;
-    top: 18px;
+    --header_faltól: 1rem;
+    right: var(--header_faltól);
+    top: var(--header_faltól);
 }
 #header_ul{
     display: flex;
@@ -53,7 +55,7 @@ header{
     --icon_size: 35px;
     height: var(--icon_size);
     width: var(--icon_size);
-    padding-left: 20px;
+    padding-left: 1.5rem;
 }
 
 /*     Icons     */
@@ -72,14 +74,37 @@ header{
 }
 
 /*!       Main       */
-
+:root{
+    --text_in: 1rem;
+}
+main h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.name{
+    margin-bottom: 0.2rem;
+    margin-left: calc(1 * var(--text_in));
+}
+.task{
+    margin-top: 0.2rem;
+    margin-left: calc(2 * var(--text_in));
+}
+.h3_title{
+    margin-bottom: 0.2rem;
+    margin-left: calc(2 * var(--text_in));
+}
+main p{
+    margin-top: 0.2rem;
+    margin-left: calc(3 * var(--text_in));
+    margin-right: calc(2 * var(--text_in))
+}
 
 /*!       Footer       */
 footer{
     line-height: 1.5rem;
     font-size: 80%;
     width: 100%;
-    background-color: rgb(40, 40, 40);
+    background-color: rgba(40, 40, 40, 0.8);
 }
 #footer_table{
     width: 100%;
