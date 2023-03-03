@@ -1,8 +1,16 @@
+/*!       General       */
 body{
     box-sizing: border-box;
     word-break: break-word;
+    height: 100%;
     margin: 0;
+    font-family: Bahnschrift;
 }
+a{
+    cursor: pointer;
+}
+
+/*!       Header       */
 header{
     background-color: rgba(0, 0, 0, 0.2);
     align-items: center;
@@ -22,9 +30,45 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    height: 50px;
-    padding-left: 50px;
+
+    margin-inline: 3rem;
+
+    --icon_size: 30px;
+    height: var(--icon_size);
+    width: var(--icon_size);
+    padding-left: 20px;
+}
+/*     Icons     */
+.google_drive_icon{
+    background-image: url(IMG/Google_Drive_icon.png);
+}
+.github_icon{
+    background-image: url(IMG/Git_Hub_icon.png);
 }
 .abaut_us_icon{
     background-image: url(IMG/Abaut_Us_icon.png);
+}
+
+/*!       Main       */
+main{
+    height: 1000px;
+}
+
+/*!       Footer       */
+footer{
+    line-height: 3rem;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+}
+footer p{
+    color: white;
+    margin: 0;
+}
+#foot_left{
+    margin-left: 1rem;
+    float: left;
+}
+#foot_right{
+    margin-right: 2rem;
+    float: right;
 }
