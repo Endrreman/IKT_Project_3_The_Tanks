@@ -1,5 +1,5 @@
 /*!       General       */
-body{
+html, body{
     box-sizing: border-box;
     word-break: break-word;
     scroll-behavior: smooth;
@@ -73,11 +73,42 @@ header{
     height: 72px;
 }
 
+/*!       Nav       */
+nav{
+    float: left;
+    width: 12%;
+    height: 200%;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding-inline-start: 0;
+    position:sticky; 
+    top:1rem;
+}
+nav li{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+nav span{
+    padding: 0.3rem;
+    background-color: rgba(66, 66, 66, 0.4);
+    border-radius: 10px;
+}
+nav a{
+    color: #043616;
+    text-decoration: none;
+}
+
 /*!       Main       */
 :root{
     --text_in: 1rem;
 }
-main h1{
+main{
+    float: left;
+    width: 88%;
+}
+h1{
     text-align: center;
     font-size: 2.5rem;
 }
@@ -101,6 +132,7 @@ main p{
 
 /*!       Footer       */
 footer{
+    float: left;
     line-height: 1.5rem;
     font-size: 80%;
     width: 100%;
