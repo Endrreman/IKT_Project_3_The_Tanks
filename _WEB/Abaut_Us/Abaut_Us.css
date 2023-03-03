@@ -34,10 +34,8 @@ header{
     align-items: center;
     display: flex;
     position:fixed;
-    /* elhelyezkedés
-    right: ;
-    top: ;
-    */
+    right: 0;
+    top: 18px;
 }
 #header_ul{
     display: flex;
@@ -74,9 +72,7 @@ header{
 }
 
 /*!       Main       */
-main{
-    height: 1000px;
-}
+
 
 /*!       Footer       */
 footer{
