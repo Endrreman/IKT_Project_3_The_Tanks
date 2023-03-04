@@ -9,6 +9,8 @@ html, body{
     text-align: justify;
     background-image: url(../IMG/fű.png);
     background-size: 6%;
+}
+.color{
     color: #043616;
 }
 a{
@@ -58,6 +60,39 @@ header{
     padding-left: 1.5rem;
 }
 
+/*     Checbox     */
+.container {
+    cursor: pointer;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+
+    margin-inline: 15px;
+
+    --icon_size: 35px;
+    height: var(--icon_size);
+    width: var(--icon_size);
+    padding-left: 1.5rem;
+    background-image: url(../IMG/hide.png);
+}
+.container input:checked ~ .checkmark {
+    background-image: url(../IMG/view.png);
+}
+.container input:checked > main{
+    color: white;
+}
+/* a faszért nem mükszöl WIP */
+
 /*     Icons     */
 .google_drive_icon{
     background-image: url(../IMG/Google_Drive_icon.png);
@@ -87,12 +122,12 @@ nav ul{
     top:1rem;
 }
 nav li{
-    line-height: 2.5rem;
+    line-height: 2.8rem;
     font-size: 1.5rem;
 }
 nav span{
-    padding: 0.3rem;
-    background-color: rgba(66, 66, 66, 0.4);
+    padding: 0.4rem;
+    background-color: rgba(66, 66, 66, 0.3);
     border-radius: 10px;
 }
 nav a{
