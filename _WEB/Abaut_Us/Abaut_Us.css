@@ -7,22 +7,13 @@ html, body{
     margin: 0;
     font-family: Bahnschrift;
     text-align: justify;
-    background-image: url(../IMG/fű.png);
-    background-size: 6%;
+    background-color: rgb(29, 29, 29);
 }
 .color{
     color: #043616;
 }
 a{
     cursor: pointer;
-}
-hr{
-    background-image: url(../IMG/fal.png);
-    display: block;
-    height: 16px;
-    width: 90%;
-    border: 0;
-    border-radius: 5px;
 }
 
 /*     Scrollbar     */
@@ -32,7 +23,7 @@ hr{
 
 /*!       Header       */
 header{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(180, 180, 180, 0.4);
     border-radius: 20px;
     align-items: center;
     display: flex;
@@ -61,15 +52,11 @@ header{
 }
 
 /*     Checbox     */
-.container {
+/*.container {
     cursor: pointer;
 }
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+#eye {
+    display: none;
 }
 .checkmark {
     background-position: 50%;
@@ -85,13 +72,16 @@ header{
     padding-left: 1.5rem;
     background-image: url(../IMG/hide.png);
 }
-.container input:checked ~ .checkmark {
+#eye:checked ~ .checkmark {
     background-image: url(../IMG/view.png);
 }
-.container input:checked > main{
-    color: white;
+#eye:empty ~ .color{
+    color: #043616;
 }
-/* a faszért nem mükszöl WIP */
+#eye:checked ~ .color{
+    color: white;
+}*/
+/*!                                                                a faszért nem mükszöl                  */
 
 /*     Icons     */
 .google_drive_icon{
@@ -114,6 +104,7 @@ nav{
     width: 12%;
     height: 200%;
     text-align: center;
+    
 }
 nav ul{
     list-style: none;
@@ -127,12 +118,13 @@ nav li{
 }
 nav span{
     padding: 0.4rem;
-    background-color: rgba(66, 66, 66, 0.3);
-    border-radius: 10px;
+    background-image: url(../IMG/fal.png);
+    border-radius: 5px;
 }
 nav a{
-    color: #043616;
+    /*color: #043616;*/
     text-decoration: none;
+    color: white;
 }
 
 /*!       Main       */
@@ -141,11 +133,31 @@ nav a{
 }
 main{
     float: left;
-    width: 88%;
+    width: 76%;
 }
 h1{
     text-align: center;
     font-size: 2.5rem;
+    color: white;
+}
+.namecard_bg{
+    background-image: url(../IMG/fű.png);
+    background-size: 6%;
+    border-radius: 2.5rem;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.301);
+}
+hr{
+    background-image: url(../IMG/fal.png);
+    display: block;
+    height: 25px;
+    width: 90%;
+    border: 0;
+    border-radius: 5px;
+    --hr_margin: 1.5rem;
+    margin-top: var(--hr_margin);
+    margin-bottom: var(--hr_margin);
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.301);
 }
 .name{
     margin-bottom: 0.2rem;
@@ -163,6 +175,9 @@ main p{
     margin-top: 0.2rem;
     margin-left: calc(3 * var(--text_in));
     margin-right: calc(2 * var(--text_in))
+}
+#bence{
+    margin-bottom: 2rem;
 }
 
 /*!       Footer       */
