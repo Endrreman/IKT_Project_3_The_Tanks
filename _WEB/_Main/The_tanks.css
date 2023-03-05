@@ -1,5 +1,5 @@
 /*!       General       */
-body{
+html, body{
     box-sizing: border-box;
     word-break: break-word;
     scroll-behavior: smooth;
@@ -7,6 +7,10 @@ body{
     margin: 0;
     font-family: Bahnschrift;
     text-align: justify;
+    background-color: rgb(29, 29, 29);
+}
+.color{
+    color: #043616;
 }
 a{
     cursor: pointer;
@@ -14,30 +18,19 @@ a{
 
 /*     Scrollbar     */
 ::-webkit-scrollbar {
-    width: 18px;
-}
-::-webkit-scrollbar:hover {
-    width: 18px;
-}
-::-webkit-scrollbar-track:hover {
-    background-color: rgb(255, 255, 255);
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    border: 3px solid rgb(255, 255, 255);
-    border-left: none;
+    display: none;
 }
 
 /*!       Header       */
 header{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(180, 180, 180, 0.4);
     border-radius: 20px;
     align-items: center;
     display: flex;
     position:fixed;
-    right: 0;
-    top: 18px;
+    --header_faltól: 1rem;
+    right: var(--header_faltól);
+    top: var(--header_faltól);
 }
 #header_ul{
     display: flex;
@@ -58,6 +51,7 @@ header{
     padding-left: 1.5rem;
 }
 
+
 /*     Icons     */
 .google_drive_icon{
     background-image: url(../IMG/Google_Drive_icon.png);
@@ -66,7 +60,9 @@ header{
     background-image: url(../IMG/Git_Hub_icon.png);
 }
 .abaut_us_icon{
-    background-image: url(../IMG/Abaut_Us_icon_2.0.png);
+    background-image: url(../IMG/Abaut_Us_icon.png);
+    height: 40px;
+    width: 40px;
 }
 /*     Léc a header-nek     */
 #spacer{
