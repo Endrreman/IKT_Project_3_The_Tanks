@@ -14,6 +14,7 @@ html, body{
 }
 a{
     cursor: pointer;
+    text-decoration: none;
 }
 
 /*     Scrollbar     */
@@ -49,8 +50,34 @@ header{
     height: var(--icon_size);
     width: var(--icon_size);
     padding-left: 1.5rem;
-}
 
+    transition-duration: .5s;
+}
+.header_title{
+    transition-duration: .5s;
+    font-size: 0%;
+    opacity: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.header_title_span{
+    background-color: rgb(77, 184, 219);
+    border-radius: 10px;
+    padding: 0.2rem;
+
+}
+.header_icon:hover{
+    height: calc( var(--icon_size) * 1.5);
+    width:  calc( var(--icon_size) * 1.5);
+}
+.header_icon:hover + .header_title{
+    font-size: 1rem;
+    opacity: 1;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
 
 /*     Icons     */
 .google_drive_icon{
@@ -71,6 +98,55 @@ header{
 /*!       Main       */
 main{
     height: 1000px;
+}
+.download{
+    width: 12rem;
+    text-align: center;
+
+    background-image: url(../IMG/fű.png);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    transition-duration: .5s;
+
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.download:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+/*
+.win{
+
+}
+.lin{
+
+}
+*/
+.download_icon{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+
+    margin-inline: 15px;
+    
+    --down_icon_size: 3rem;
+    height: var(--down_icon_size);
+    width: var(--down_icon_size);
+    padding-top: 1.5rem;
+}
+.download_p{
+    color: white;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+/*     Icons     */
+.win_icon{
+    background-image: url(../IMG/win_icon.png);
+}
+.lin_icon{
+    background-image: url(../IMG/lin_icon.png);
 }
 
 /*!       Footer       */

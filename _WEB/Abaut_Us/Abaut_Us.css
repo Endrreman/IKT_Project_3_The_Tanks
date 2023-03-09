@@ -14,6 +14,7 @@ html, body{
 }
 a{
     cursor: pointer;
+    text-decoration: none;
 }
 
 /*     Scrollbar     */
@@ -49,6 +50,33 @@ header{
     height: var(--icon_size);
     width: var(--icon_size);
     padding-left: 1.5rem;
+
+    transition-duration: .5s;
+}
+.header_title{
+    transition-duration: .5s;
+    font-size: 0%;
+    opacity: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.header_title_span{
+    background-color: rgb(77, 184, 219);
+    border-radius: 10px;
+    padding: 0.2rem;
+
+}
+.header_icon:hover{
+    height: calc( var(--icon_size) * 1.5);
+    width:  calc( var(--icon_size) * 1.5);
+}
+.header_icon:hover + .header_title{
+    font-size: 1rem;
+    opacity: 1;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
 }
 
 /*     Checbox     */
