@@ -33,6 +33,7 @@ header{
     right: var(--header_faltól);
     top: var(--header_faltól);
 }
+
 #header_ul{
     display: flex;
     list-style: none;
@@ -80,6 +81,9 @@ header{
 }
 
 /*     Icons     */
+.hamburger_icon{
+    background-image: url(../IMG/hamburger_icon.png);
+}
 .google_drive_icon{
     background-image: url(../IMG/Google_Drive_icon.png);
 }

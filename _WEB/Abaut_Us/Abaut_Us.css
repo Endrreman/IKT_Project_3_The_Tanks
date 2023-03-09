@@ -27,7 +27,6 @@ header{
     background-color: rgba(180, 180, 180, 0.4);
     border-radius: 20px;
     align-items: center;
-    display: flex;
     position:fixed;
     --header_faltól: 1rem;
     right: var(--header_faltól);
@@ -129,7 +128,7 @@ header{
 /*!       Nav       */
 nav{
     float: left;
-    width: 12%;
+    width: 13rem;
     height: 200%;
     text-align: center;
     
@@ -155,13 +154,14 @@ nav a{
     color: white;
 }
 
+
 /*!       Main       */
 :root{
     --text_in: 1rem;
 }
 main{
     float: left;
-    width: 76%;
+    width: 80%;
 }
 h1{
     text-align: center;
@@ -229,4 +229,65 @@ footer p{
 #foot_right{
     margin-right: 1rem;
     text-align: right;
+}
+
+/*!       1100px       */
+@media screen and (max-width: 1100px){
+    #header_ul{
+        display: block;
+    }
+    .header_icon{
+        margin-inline: .5rem;
+
+        margin-top: .6rem;
+        margin-bottom: .6rem;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        width: 80%;
+        margin-inline: 6%;
+    }
+}
+
+/*!       900px       */
+@media screen and (max-width: 900px){
+    header{
+        background-color: rgba(180, 180, 180, 0.6);
+        position: absolute;
+    }
+    #header_ul{
+        display: flex;
+    }
+    .header_icon{
+        margin-inline: .5rem;
+
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    h1{
+        margin-left: 10%;
+        text-align: left;
+        font-size: 2rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    main{
+        width: 94%;
+        margin-inline: 0;
+        margin-left: 3%;
+        margin-right:10%;
+    }
+}
+
+/*!       700px       */
+@media screen and (max-width: 700px){
+    .header_spacer{
+        height: 5rem;
+    }
+    h1{
+        text-align: center;
+        margin-left: 0;
+    }
 }
