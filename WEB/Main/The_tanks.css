@@ -153,7 +153,7 @@ main h2{
 .win{
     margin-top: 5rem;
 }
-.win, .lin{
+.win, .mac, .lin{
     display: block;
     margin-inline: auto;
 }
@@ -181,6 +181,9 @@ main h2{
 /*     Icons     */
 .win_icon{
     background-image: url(../IMG/win_icon.png);
+}
+.mac_icon{
+    background-image: url(../IMG/mac_icon.png);
 }
 .lin_icon{
     background-image: url(../IMG/lin_icon.png);
