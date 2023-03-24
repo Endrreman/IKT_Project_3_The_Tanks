@@ -104,10 +104,13 @@ header{
 .github_icon{
     background-image: url(../IMG/Git_Hub_icon.png);
 }
-.abaut_us_icon{
+.about_us_icon{
     background-image: url(../IMG/Abaut_Us_icon.png);
     height: 40px;
     width: 40px;
+}
+.docx_icon{
+    background-image: url(../IMG/docx_icon.png);
 }
 /*     Léc a header-nek     */
 #spacer{
