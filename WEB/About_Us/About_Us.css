@@ -78,6 +78,7 @@ header{
     margin-left: 0.2rem;
 }
 
+/*!       WIP       */
 /*     Checbox     */
 /*.container {
     cursor: pointer;
@@ -108,7 +109,7 @@ header{
 #eye:checked ~ .color{
     color: white;
 }*/
-/*!                                                                a faszért nem mükszöl                  */
+/*!       WIP       */
 
 /*     Icons     */
 .google_drive_icon{
@@ -116,6 +117,9 @@ header{
 }
 .github_icon{
     background-image: url(../IMG/Git_Hub_icon.png);
+}
+.docx_icon{
+    background-image: url(../IMG/docx_icon.png);
 }
 .home_icon{
     background-image: url(../IMG/Home_icon.png);
@@ -289,5 +293,12 @@ footer p{
     h1{
         text-align: center;
         margin-left: 0;
+    }
+}
+
+/*!       500px       */
+@media screen and (max-width: 500px){
+    footer{
+        display: none;
     }
 }
